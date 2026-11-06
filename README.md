@@ -9,29 +9,29 @@
 > **Это не эмулятор PS4.** Лаунчер запускает обычные Windows-игры.
 > **Not a PS4 emulator.** It launches regular Windows games.
 
-![Экран приветствия PS4 Launcher](screenshots/00-welcome.jpg)
+![Экран приветствия PS4 Launcher](screenshots/00-welcome-2026.jpg)
 
 ## Скриншоты / Screenshots
 
 | Заставка · Boot splash | Библиотека · Library |
 |:---:|:---:|
-| ![Заставка](screenshots/05-boot.png) | ![Библиотека](screenshots/01-home.jpg) |
+| ![Заставка](screenshots/09-boot.png) | ![Библиотека](screenshots/01-library-flowscape.jpg) |
 
-| Выбор игры · Selected game | Страница игры · Game page |
+| Выбор игры · Selected game | «Что нового» · What's New |
 |:---:|:---:|
-| ![Выбор игры](screenshots/06-library-selection.jpg) | ![Страница игры](screenshots/02-game-page.jpg) |
+| ![Выбор игры](screenshots/02-library-selection.jpg) | ![Что нового](screenshots/04-whats-new-2026.jpg) |
 
-| Страница игры · Game page | «Что нового» · What's New |
-|:---:|:---:|
-| ![Страница игры The Last of Us](screenshots/07-game-page-tlou.jpg) | ![Что нового](screenshots/03-whats-new.jpg) |
+| Страница игры · Game page |
+|:---:|
+| ![Страница игры The Last of Us](screenshots/03-game-page-tlou.jpg) |
 
 | Хаб новинки · Release hub | Просмотр скриншотов · Screenshot viewer |
 |:---:|:---:|
-| ![Хаб новинки](screenshots/09-whats-new-hub.jpg) | ![Просмотр скриншотов](screenshots/10-screenshot-viewer.jpg) |
+| ![Хаб новинки](screenshots/05-whats-new-hub.jpg) | ![Просмотр скриншотов](screenshots/06-screenshot-viewer.jpg) |
 
 | Выбор темы · Theme picker | Настройки · Settings |
 |:---:|:---:|
-| ![Выбор темы](screenshots/08-themes.jpg) | ![Настройки](screenshots/04-settings.jpg) |
+| ![Выбор темы](screenshots/07-themes.jpg) | ![Настройки](screenshots/08-settings-2026.jpg) |
 
 ---
 
