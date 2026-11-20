@@ -13,25 +13,89 @@
 
 ## Скриншоты / Screenshots
 
-| Заставка · Boot splash | Библиотека · Library |
-|:---:|:---:|
-| ![Заставка](screenshots/09-boot.png) | ![Библиотека](screenshots/01-library-flowscape.jpg) |
+**Главный экран · Home**
 
-| Выбор игры · Selected game | «Что нового» · What's New |
+| Библиотека и «Что нового» · Library | Заставка · Boot splash |
 |:---:|:---:|
-| ![Выбор игры](screenshots/02-library-selection.jpg) | ![Что нового](screenshots/04-whats-new-2026.jpg) |
+| ![Главный экран](screenshots/10-home-2026.jpg) | ![Заставка](screenshots/09-boot.png) |
 
-| Страница игры · Game page |
+**Страница игры · Game page**
+
+| The Last of Us™ Part II | The Last of Us Remastered |
+|:---:|:---:|
+| ![Страница игры](screenshots/11-game-page-tlou2.jpg) | ![Страница игры](screenshots/12-game-page-tlou1.jpg) |
+
+**Меню Options · Options menu**
+
+| Меню Options |
 |:---:|
-| ![Страница игры The Last of Us](screenshots/03-game-page-tlou.jpg) |
+| ![Меню Options](screenshots/13-options-menu.jpg) |
 
-| Хаб новинки · Release hub | Просмотр скриншотов · Screenshot viewer |
-|:---:|:---:|
-| ![Хаб новинки](screenshots/05-whats-new-hub.jpg) | ![Просмотр скриншотов](screenshots/06-screenshot-viewer.jpg) |
+**Добавление игры · Adding a game**
 
-| Выбор темы · Theme picker | Настройки · Settings |
+| Выбор файла · File browser | Поиск издания · Edition search |
 |:---:|:---:|
-| ![Выбор темы](screenshots/07-themes.jpg) | ![Настройки](screenshots/08-settings-2026.jpg) |
+| ![Выбор файла](screenshots/14-add-game-file.jpg) | ![Поиск издания](screenshots/15-add-game-edition.jpg) |
+
+| Экран поиска · Search screen | Экран добавления · Adding |
+|:---:|:---:|
+| ![Экран поиска](screenshots/16-add-game-search.jpg) | ![Экран добавления](screenshots/17-add-game-loading.jpg) |
+
+**Обложки и фоны · Covers & backgrounds**
+
+| Источник обложки · Cover source | Галерея обложек · Cover picker |
+|:---:|:---:|
+| ![Источник обложки](screenshots/18-cover-source.jpg) | ![Галерея обложек](screenshots/19-cover-picker.jpg) |
+
+| Источник фона · Background source | Галерея фонов · Background picker |
+|:---:|:---:|
+| ![Источник фона](screenshots/20-background-source.jpg) | ![Галерея фонов](screenshots/21-background-picker.jpg) |
+
+**Уведомления · Notifications**
+
+| История · History | Всплывающая плашка · Toast |
+|:---:|:---:|
+| ![Уведомления](screenshots/22-notifications.jpg) | ![Плашка](screenshots/23-notification-toast.jpg) |
+
+| Верхний ряд функций · Function row |
+|:---:|
+| ![Верхний ряд](screenshots/24-function-row.jpg) |
+
+**Профиль и контроллер · Profile & controller**
+
+| Профиль · Profile | Аватары · Avatars |
+|:---:|:---:|
+| ![Профиль](screenshots/25-profile.jpg) | ![Аватары](screenshots/26-avatar-picker.jpg) |
+
+| Меню профиля и контроллера · Profile & controller menu |
+|:---:|
+| ![Меню профиля](screenshots/27-profile-menu.jpg) |
+
+**Системные страницы · System pages**
+
+| Звук · Sound | Дисплей · Displays |
+|:---:|:---:|
+| ![Звук](screenshots/28-sound.jpg) | ![Дисплей](screenshots/29-display.jpg) |
+
+| Запуск · Startup | Питание · Power |
+|:---:|:---:|
+| ![Запуск](screenshots/30-startup.jpg) | ![Питание](screenshots/31-power.jpg) |
+
+**Темы · Themes**
+
+| Выбор темы · Theme picker |
+|:---:|
+| ![Выбор темы](screenshots/32-themes-2026.jpg) |
+
+**«Что нового» · What's New**
+
+| Лента · Feed | Хаб новинки · Release hub |
+|:---:|:---:|
+| ![Что нового](screenshots/04-whats-new-2026.jpg) | ![Хаб новинки](screenshots/05-whats-new-hub.jpg) |
+
+| Просмотр скриншотов · Screenshot viewer |
+|:---:|
+| ![Просмотр скриншотов](screenshots/06-screenshot-viewer.jpg) |
 
 ---
 
@@ -41,25 +105,50 @@
 
 PS4 Launcher — личный проект: домашний экран PlayStation для Windows-игр. Это не эмулятор и не замена консоли — просто уютная оболочка, в которой игры запускаются с геймпада, с обложками, описаниями и знакомыми звуками. Хочется включить компьютер, сесть на диван и на пару секунд поверить, что это та самая приставка.
 
+За последнее время лаунчер вырос из ленты обложек в полноценную оболочку: у игр появились страницы со сведениями и статистикой, добавились профиль, уведомления, темы, звук, дисплеи и настройки Windows — всё в стиле PS4.
+
 Интерфейс и описания — на русском.
+
+### Что нового
+
+Обновление от 20 ноября 2026:
+
+- **Добавление игры внутри лаунчера.** Файловый браузер по дискам, поиск издания в PS Store (с резервным IGDB для PC-игр), выбор источника метаданных и системный экран ожидания в стиле PS4. Название, обложка, фон и описание подтягиваются автоматически.
+- **Новая страница игры.** Разделы «Обзор» и «Сведения», жанры, разработчик и издатель, переведённые описания, время в игре и дата последнего запуска.
+- **Меню Options на главном экране.** Избранное, переименование, выбор обложки, выбор фона, параметры запуска и удаление из библиотеки.
+- **Обложки и фоны из двух источников.** PS Store и IGDB, галереи с отметкой «Установлен».
+- **Уведомления.** Всплывающие плашки, история, счётчик непрочитанных и звуки — в том числе для добавления игры и подключения геймпада.
+- **Профиль.** Имя, аватар и пять последних аватаров; добавление картинки с компьютера и собственная экранная клавиатура.
+- **Системные страницы в стиле PS4.** «Звук» (музыка и звуки интерфейса, устройство вывода Windows), «Дисплей» (режим отображения и монитор лаунчера), «Запуск» (автозапуск с Windows и экспериментальное скрытие рабочего стола) и «Питание» (выключение, перезапуск, сон, выход).
+- **Верхний ряд функций.** «Добавить игру», «Уведомления», «Звук», «Дисплей», «Профиль», «Темы», «Запуск» и «Питание» — как на домашнем экране PS4.
+- **Геймпады.** Подключение и отключение на лету, мост для DualShock 4 и вход по кнопке PS/Home на экране приветствия.
+- **Только клавиатура и геймпад.** Мышь, тачпад и касания намеренно не управляют интерфейсом — так сохраняется консольное ощущение.
+- **Переходы и списки.** Кроссфейды страниц, кадент автоповтора прокрутки, рамка фокуса строки с коротким следом, вуаль у обеих кромок списка и кроссфейд каталогов при входе в папку.
+- **Темы.** Страница выбора в стиле PS4 с JPEG-превью карточек и плавным переключением; видео всегда без звука.
 
 ### Что умеет
 
-- **Знакомое начало.** Чёрная заставка с логотипом, экран «С возвращением в PlayStation», живая волна на фоне, музыка и вход по кнопке PS — или с клавиатуры и мыши.
-- **Библиотека.** Горизонтальная лента обложек; выбранная игра плавно увеличивается. Любимые игры можно поднять в начало, а новую — добавить через проводник: название лаунчер подхватит сам.
-- **Страница игры.** Большой арт, описание, жанры, дата выхода, разработчик и издатель. Видно, сколько вы играли и когда запускали игру в последний раз. Запуск, избранное, переименование, обложка, фон и удаление — здесь же.
-- **«Что нового».** Обновления ваших игр, хиты месяца и то, что скоро выйдет.
-- **Страница новинки.** У каждой новинки — описание, детали и скриншоты; кадры можно открыть на весь экран. Лента открывается сразу: картинки готовятся заранее.
-- **Консольные переходы.** Открытие страниц, запуск игры и возвращение в библиотеку анимированы в духе PS4. Лаунчер остаётся работать в фоне, поэтому после закрытия игры вы попадаете обратно в оболочку, а не на рабочий стол.
+- **Знакомое начало.** Чёрная заставка с логотипом, экран «С возвращением в PlayStation», живая волна на фоне, музыка и вход по кнопке PS — или с клавиатуры.
+- **Библиотека.** Горизонтальная лента обложек; выбранная игра плавно увеличивается. Любимые игры можно поднять в начало, а новые — добавить прямо из лаунчера.
+- **Добавление игры.** Лаунчер открывает собственный файловый браузер, показывает диски и папки, принимает EXE-файл и предлагает издания из PS Store или IGDB. Дальше — экран ожидания, автоматический подбор обложки, фона и описания, уведомление и место в библиотеке.
+- **Страница игры.** Обложка, арт, описание, жанры, разработчик, издатель и дата выхода; время в игре и последний запуск. Кнопка «Запуск» и меню Options — рядом.
+- **Меню Options.** Добавить в избранное, переименовать, выбрать обложку, выбрать фон, настроить параметры запуска (EXE, аргументы, рабочая папка, фильтр папок) или удалить игру из библиотеки.
+- **Обложки и фоны.** Два каталога источников — PS Store и IGDB; выбранный вариант помечается «Установлен» и сохраняется.
+- **«Что нового».** Обновления ваших игр, хиты месяца и то, что скоро выйдет. У каждой новинки — описание, детали и скриншоты, которые открываются на весь экран.
+- **Уведомления.** Плашки о добавлении игры, подключении и отключении контроллера и системных событиях; отдельный экран истории и голубой счётчик непрочитанных.
+- **Профиль.** Экран с именем и аватаром. Хранятся пять последних аватаров: шестой вытесняет самый старый, а изображение остаётся в профиле даже после удаления исходного файла.
+- **Темы.** Положите видео в папку `themes` — оно появится в каталоге с превью. Заставка и приветствие остаются с волной: тема включается при входе в библиотеку. Видео всегда без звука.
+- **Звук.** Отдельные уровни для музыки и звуков интерфейса, выбор устройства вывода Windows. Некоторые запущенные игры могут потребовать перезапуска после смены устройства.
+- **Дисплеи.** Режимы «Только основной», «Дублировать», «Расширить» и «Только второй», а также выбор конкретного монитора для лаунчера. Выбор сохраняется после перезапуска.
+- **Запуск.** Автозапуск при входе в Windows и экспериментальное скрытие рабочего стола и панели задач на время работы лаунчера. Замена системной оболочки пока недоступна — возможность изучается.
+- **Питание.** Выключение, перезапуск, спящий режим и выход из лаунчера на рабочий стол Windows.
+- **Запуск и возврат.** Лаунчер запускает игру, находит её окно и возвращает фокус после выхода; время игры считается само, а музыка на старте становится тише.
+- **Переходы.** Открытие страниц и системных экранов — PS4-кроссфейды; вертикальные списки листаются в каденте, строки гаснут у обеих кромок, а рамка фокуса остаётся на строке.
 - **Фон.** Собственная анимированная волна в стиле PS4; в игре она замирает.
-- **Темы.** Положите видео в папку `themes` — оно автоматически появится в списке с превью, а переключение между темами идёт плавно. Выбор запоминается, видео всегда без звука. Заставка и приветствие остаются с волной: выбранная тема включается, когда вы входите в библиотеку.
-- **Запуск и возврат.** Лаунчер запускает игру, находит её окно и возвращает фокус после выхода. Время игры считается само, а музыка на старте становится тише.
-- **Управление.** Геймпад, клавиатура или мышь — подсказки внизу подстраиваются под то, чем вы пользуетесь.
-- **Настройки.** Автозапуск с Windows, формат часов и фон лаунчера. Сон, перезагрузка, выключение и выход в Windows — рядом.
 
 ### Технологии
 
-Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Обложки и описания — SteamGridDB, IGDB и Steam. Windows 10/11.
+Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Метаданные и изображения — PS Store, IGDB, Steam и SteamGridDB. Windows 10/11.
 
 ### Статус
 
@@ -67,10 +156,10 @@ Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Обложк
 
 ### В планах
 
-- Доработка волны в стиле PS4.
-- Ускорение запуска и плавная работа с большими библиотеками.
+- Замена системной оболочки Windows — возможность изучается.
 - Поддержка разных разрешений и масштабирования Windows.
-- Подготовка отдельной сборки с установщиком.
+- Отдельная сборка с установщиком.
+- Дальнейшая полировка переходов и работа с большими библиотеками.
 
 ### Дисклеймер
 
@@ -84,25 +173,50 @@ Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Обложк
 
 PS4 Launcher is a personal project: a PlayStation home screen for Windows games. It is not an emulator or a console replacement — just a cozy shell where games launch with a gamepad, covers, descriptions and familiar sounds. The idea is to turn on the PC, sit back on the couch and, for a second, believe it is the real thing.
 
+The launcher has grown from a row of covers into a full shell: games now have pages with details and play stats, and there is a profile, notifications, themes, sound, displays and Windows settings — all in the PS4 spirit.
+
 The interface and descriptions are in Russian.
+
+### What's new
+
+November 20, 2026 update:
+
+- **Adding games inside the launcher.** A file browser across drives, edition search in the PS Store (with IGDB fallback for PC games), a metadata source choice and a PS4-style system loading screen. Title, cover, background and description are picked up automatically.
+- **A new game page.** "Overview" and "Details" sections, genres, developer and publisher, translated descriptions, play time and last launch date.
+- **Options menu on the home screen.** Favorite, rename, choose cover, choose background, launch options and remove from library.
+- **Covers and backgrounds from two sources.** PS Store and IGDB galleries, with the selected item marked "Installed".
+- **Notifications.** Toasts, history, an unread counter and sounds — including for game additions and controller connections.
+- **Profile.** Name, avatar and the five most recent avatars; add an image from your computer using the built-in on-screen keyboard.
+- **PS4-style system pages.** "Sound" (music and interface volume, Windows output device), "Displays" (display mode and the launcher's monitor), "Startup" (start with Windows and an experimental desktop-hide mode) and "Power" (shut down, restart, sleep, exit).
+- **Top function row.** "Add game", "Notifications", "Sound", "Displays", "Profile", "Themes", "Startup" and "Power" — like the PS4 home screen.
+- **Gamepads.** Connect and disconnect on the fly, a DualShock 4 bridge, and PS/Home button entry on the welcome screen.
+- **Keyboard and gamepad only.** Mouse, touchpad and touch input deliberately do not control the interface — it keeps the console feel.
+- **Transitions and lists.** Page crossfades, scroll auto-repeat cadence, a focus frame with a short trail, edge fades on both sides of a list and catalog crossfades when entering a folder.
+- **Themes.** A PS4-style theme picker with JPEG previews and smooth switching; videos are always muted.
 
 ### What it does
 
-- **A familiar welcome.** Black boot splash with the logo, a "Welcome back to PlayStation" screen, a living wave in the background, music and the PS button to enter — or just use the keyboard and mouse.
-- **Library.** A horizontal row of covers; the selected game grows smoothly. Favorites can be moved to the front, and a new game can be added through a file dialog — the launcher picks up its title automatically.
-- **Game page.** Large art, description, genres, release date, developer and publisher. You can see how long you have played and when the game was last launched. Launch, favorite, rename, cover, background and remove are all here.
-- **What's New.** Updates for your games, recent hits and upcoming releases.
-- **Release page.** Each release has its own page with details and screenshots, and the shots open full screen. The feed opens right away: the images are prepared in advance.
-- **Console transitions.** Opening pages, launching a game and returning to the library are animated in the spirit of PS4. The launcher keeps running in the background, so when a game closes you land back in the shell, not on the desktop.
+- **A familiar welcome.** Black boot splash with the logo, a "Welcome back to PlayStation" screen, a living wave in the background, music and the PS button to enter — or just use the keyboard.
+- **Library.** A horizontal row of covers; the selected game grows smoothly. Favorites can be moved to the front, and new games can be added right from the launcher.
+- **Adding a game.** The launcher opens its own file browser, shows drives and folders, accepts an EXE file and offers editions from PS Store or IGDB. Then comes the loading screen, automatic cover, background and description selection, a notification and a spot in the library.
+- **Game page.** Cover, art, description, genres, developer, publisher and release date; play time and the last launch. The "Launch" button and the Options menu are right here.
+- **Options menu.** Add to favorites, rename, choose a cover, choose a background, set launch options (EXE, arguments, working directory, folder filter) or remove the game from the library.
+- **Covers and backgrounds.** Two source catalogs — PS Store and IGDB; the chosen option is marked "Installed" and saved.
+- **What's New.** Updates for your games, recent hits and upcoming releases. Each release has its own page with details and screenshots that open full screen.
+- **Notifications.** Toasts for game additions, controller connections and disconnections and system events; a separate history screen and a blue unread counter.
+- **Profile.** A screen with a name and an avatar. The five most recent avatars are kept: the sixth replaces the oldest, and the image stays in the profile even if the source file is deleted.
+- **Themes.** Drop a video into the `themes` folder and it appears in the catalog with a preview. The splash and welcome screen stay with the wave; your theme starts when you enter the library. Videos are always muted.
+- **Sound.** Separate levels for music and interface sounds, plus a Windows output device choice. Some running games may need a restart after switching the device.
+- **Displays.** "Primary only", "Duplicate", "Extend" and "Second only" modes, plus choosing a specific monitor for the launcher. The choice survives a restart.
+- **Startup.** Start with Windows, and an experimental desktop-hide mode that temporarily hides the desktop and taskbar while the launcher runs. Replacing the system shell is not available yet — it is being explored.
+- **Power.** Shut down, restart, sleep and exit the launcher to the Windows desktop.
+- **Launch and return.** The launcher starts the game, finds its window and restores focus after you exit; play time is tracked automatically, and the music gets quieter on launch.
+- **Transitions.** Pages and system screens open with PS4 crossfades; vertical lists scroll at a cadence, rows fade at both edges, and the focus frame stays on its row.
 - **Background.** An animated PS4-style wave of our own; it pauses while you are in a game.
-- **Themes.** Drop a video into the `themes` folder and it appears in the list with a preview automatically; switching between themes is smooth. Your choice is saved, and videos are always muted. The splash and welcome screen stay with the wave; your theme starts when you enter the library.
-- **Launch and return.** The launcher starts the game, finds its window and restores focus after you exit. Play time is tracked automatically, and the music gets quieter on launch.
-- **Input.** Gamepad, keyboard or mouse — the hints at the bottom follow whatever you are using.
-- **Settings.** Start with Windows, clock format and launcher background. Sleep, restart, shut down and exit to Windows are right there too.
 
 ### Tech
 
-Python and pywebview (WebView2); the interface is HTML/CSS/JS. Covers and descriptions come from SteamGridDB, IGDB and Steam. Windows 10/11.
+Python and pywebview (WebView2); the interface is HTML/CSS/JS. Metadata and images come from PS Store, IGDB, Steam and SteamGridDB. Windows 10/11.
 
 ### Status
 
@@ -110,10 +224,10 @@ Personal non-commercial project. Source code is not public yet: this is just a s
 
 ### Roadmap
 
-- More work on the PS4-style wave.
-- Faster startup and smoother work with large libraries.
+- Replacing the Windows system shell — being explored.
 - Support for different resolutions and Windows scaling.
 - A separate build with an installer.
+- Further polish for transitions and work with large libraries.
 
 ### Disclaimer
 
