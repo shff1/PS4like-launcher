@@ -114,14 +114,15 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 Обновление от 20 ноября 2026:
 
 - **Добавление игры внутри лаунчера.** Файловый браузер по дискам, поиск издания в PS Store (с резервным IGDB для PC-игр), выбор источника метаданных и системный экран ожидания в стиле PS4. Название, обложка, фон и описание подтягиваются автоматически.
+- **Кеш при добавлении игры.** Миниатюры изданий в результатах поиска — только HTTP-кеш, на диск не сохраняются. Выбранные обложка и фон скачиваются один раз в версионированный кеш, из которого готовятся производные под экран; повторные открытия и выборы переиспользуют готовые файлы, а невостребованное убирает управляемый сборщик мусора.
 - **Новая страница игры.** Разделы «Обзор» и «Сведения», жанры, разработчик и издатель, переведённые описания, время в игре и дата последнего запуска.
 - **Меню Options на главном экране.** Избранное, переименование, выбор обложки, выбор фона, параметры запуска и удаление из библиотеки.
 - **Обложки и фоны из двух источников.** PS Store и IGDB, галереи с отметкой «Установлен».
 - **Уведомления.** Всплывающие плашки, история, счётчик непрочитанных и звуки — в том числе для добавления игры и подключения геймпада.
 - **Профиль.** Имя, аватар и пять последних аватаров; добавление картинки с компьютера и собственная экранная клавиатура.
-- **Системные страницы в стиле PS4.** «Звук» (музыка и звуки интерфейса, устройство вывода Windows), «Дисплей» (режим отображения и монитор лаунчера), «Запуск» (автозапуск с Windows и экспериментальное скрытие рабочего стола) и «Питание» (выключение, перезапуск, сон, выход).
+- **Системные страницы в стиле PS4.** «Звук» (музыка и звуки интерфейса, устройство вывода Windows), «Дисплей» (режим отображения и монитор лаунчера), «Запуск» (автозапуск с Windows и экспериментальное глушение проводника: explorer.exe временно завершается, отдельный сторож возвращает рабочий стол и панель задач) и «Питание» (выключение, перезапуск, сон, выход).
 - **Верхний ряд функций.** «Добавить игру», «Уведомления», «Звук», «Дисплей», «Профиль», «Темы», «Запуск» и «Питание» — как на домашнем экране PS4.
-- **Геймпады.** Подключение и отключение на лету, мост для DualShock 4 и вход по кнопке PS/Home на экране приветствия.
+- **Геймпады.** Подключение и отключение на лету, Xbox-совместимые геймпады и виртуальные DualShock 4, вход по кнопке PS/Home на экране приветствия. Мой контроллер подключается через мою отдельную внешнюю программу — встроенного моста в лаунчере нет.
 - **Только клавиатура и геймпад.** Мышь, тачпад и касания намеренно не управляют интерфейсом — так сохраняется консольное ощущение.
 - **Переходы и списки.** Кроссфейды страниц, кадент автоповтора прокрутки, рамка фокуса строки с коротким следом, вуаль у обеих кромок списка и кроссфейд каталогов при входе в папку.
 - **Темы.** Страница выбора в стиле PS4 с JPEG-превью карточек и плавным переключением; видео всегда без звука.
@@ -131,6 +132,7 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 - **Знакомое начало.** Чёрная заставка с логотипом, экран «С возвращением в PlayStation», живая волна на фоне, музыка и вход по кнопке PS — или с клавиатуры.
 - **Библиотека.** Горизонтальная лента обложек; выбранная игра плавно увеличивается. Любимые игры можно поднять в начало, а новые — добавить прямо из лаунчера.
 - **Добавление игры.** Лаунчер открывает собственный файловый браузер, показывает диски и папки, принимает EXE-файл и предлагает издания из PS Store или IGDB. Дальше — экран ожидания, автоматический подбор обложки, фона и описания, уведомление и место в библиотеке.
+- **Кеширование изображений.** Миниатюры в результатах поиска изданий показываются из HTTP-кеша и на диск не сохраняются. После подтверждения обложка и фон скачиваются один раз и попадают в версионированный кеш: оригинал хранится по SHA-256, а из него готовятся производные под экран — обложка 512 px, фон до 2560 px, при необходимости 1080p/1440p/4K. Повторный выбор и открытие страниц берут готовый файл без новой загрузки и перекодирования; у игры одна сохранённая обложка, а ручной выбор никогда не перезаписывается автоматическим. Незавершённая запись восстанавливается по журналу транзакций, а невостребованные ресурсы после смены фона или удаления игры удаляет управляемый сборщик мусора — с задержкой 10 минут и только внутри собственного каталога кеша.
 - **Страница игры.** Обложка, арт, описание, жанры, разработчик, издатель и дата выхода; время в игре и последний запуск. Кнопка «Запуск» и меню Options — рядом.
 - **Меню Options.** Добавить в избранное, переименовать, выбрать обложку, выбрать фон, настроить параметры запуска (EXE, аргументы, рабочая папка, фильтр папок) или удалить игру из библиотеки.
 - **Обложки и фоны.** Два каталога источников — PS Store и IGDB; выбранный вариант помечается «Установлен» и сохраняется.
@@ -140,9 +142,10 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 - **Темы.** Положите видео в папку `themes` — оно появится в каталоге с превью. Заставка и приветствие остаются с волной: тема включается при входе в библиотеку. Видео всегда без звука.
 - **Звук.** Отдельные уровни для музыки и звуков интерфейса, выбор устройства вывода Windows. Некоторые запущенные игры могут потребовать перезапуска после смены устройства.
 - **Дисплеи.** Режимы «Только основной», «Дублировать», «Расширить» и «Только второй», а также выбор конкретного монитора для лаунчера. Выбор сохраняется после перезапуска.
-- **Запуск.** Автозапуск при входе в Windows и экспериментальное скрытие рабочего стола и панели задач на время работы лаунчера. Замена системной оболочки пока недоступна — возможность изучается.
+- **Запуск.** Автозапуск при входе в Windows и экспериментальное скрытие рабочего стола: лаунчер временно завершает только процесс оболочки explorer.exe (открытые окна папок перед этим закрываются), а отдельный процесс-сторож автоматически возвращает рабочий стол и панель задач после выхода, падения или зависания лаунчера. Dirty-маркер переживает двойной сбой, и тогда рабочий стол возвращается вручную через диспетчер задач. Реестр и политики Windows не меняются; замена системной оболочки пока недоступна — возможность изучается.
 - **Питание.** Выключение, перезапуск, спящий режим и выход из лаунчера на рабочий стол Windows.
 - **Запуск и возврат.** Лаунчер запускает игру, находит её окно и возвращает фокус после выхода; время игры считается само, а музыка на старте становится тише.
+- **Управление.** Геймпады подключаются и отключаются на лету; поддерживаются Xbox-совместимые геймпады и виртуальные DualShock 4 от отдельной внешней программы для моего контроллера — встроенного моста в лаунчере нет. Подсказки внизу подстраиваются под клавиатуру или геймпад; мышь и касания намеренно не управляют интерфейсом.
 - **Переходы.** Открытие страниц и системных экранов — PS4-кроссфейды; вертикальные списки листаются в каденте, строки гаснут у обеих кромок, а рамка фокуса остаётся на строке.
 - **Фон.** Собственная анимированная волна в стиле PS4; в игре она замирает.
 
@@ -182,14 +185,15 @@ The interface and descriptions are in Russian.
 November 20, 2026 update:
 
 - **Adding games inside the launcher.** A file browser across drives, edition search in the PS Store (with IGDB fallback for PC games), a metadata source choice and a PS4-style system loading screen. Title, cover, background and description are picked up automatically.
+- **Image caching.** Edition thumbnails in search results come from the HTTP cache and are never written to disk. Once you confirm, the cover and background are downloaded once into a versioned cache: the original is stored by SHA-256 and derivatives are prepared for the screen; reopening pages and picking again reuse the prepared files, and unused assets are cleaned up by a managed garbage collector.
 - **A new game page.** "Overview" and "Details" sections, genres, developer and publisher, translated descriptions, play time and last launch date.
 - **Options menu on the home screen.** Favorite, rename, choose cover, choose background, launch options and remove from library.
 - **Covers and backgrounds from two sources.** PS Store and IGDB galleries, with the selected item marked "Installed".
 - **Notifications.** Toasts, history, an unread counter and sounds — including for game additions and controller connections.
 - **Profile.** Name, avatar and the five most recent avatars; add an image from your computer using the built-in on-screen keyboard.
-- **PS4-style system pages.** "Sound" (music and interface volume, Windows output device), "Displays" (display mode and the launcher's monitor), "Startup" (start with Windows and an experimental desktop-hide mode) and "Power" (shut down, restart, sleep, exit).
+- **PS4-style system pages.** "Sound" (music and interface volume, Windows output device), "Displays" (display mode and the launcher's monitor), "Startup" (start with Windows and an experimental Explorer shutdown: explorer.exe is terminated temporarily while a separate guard brings the desktop and taskbar back) and "Power" (shut down, restart, sleep, exit).
 - **Top function row.** "Add game", "Notifications", "Sound", "Displays", "Profile", "Themes", "Startup" and "Power" — like the PS4 home screen.
-- **Gamepads.** Connect and disconnect on the fly, a DualShock 4 bridge, and PS/Home button entry on the welcome screen.
+- **Gamepads.** Connect and disconnect on the fly, Xbox-compatible pads and virtual DualShock 4 pads, and PS/Home button entry on the welcome screen. My controller connects through my own separate external program — the launcher has no built-in bridge.
 - **Keyboard and gamepad only.** Mouse, touchpad and touch input deliberately do not control the interface — it keeps the console feel.
 - **Transitions and lists.** Page crossfades, scroll auto-repeat cadence, a focus frame with a short trail, edge fades on both sides of a list and catalog crossfades when entering a folder.
 - **Themes.** A PS4-style theme picker with JPEG previews and smooth switching; videos are always muted.
@@ -199,6 +203,7 @@ November 20, 2026 update:
 - **A familiar welcome.** Black boot splash with the logo, a "Welcome back to PlayStation" screen, a living wave in the background, music and the PS button to enter — or just use the keyboard.
 - **Library.** A horizontal row of covers; the selected game grows smoothly. Favorites can be moved to the front, and new games can be added right from the launcher.
 - **Adding a game.** The launcher opens its own file browser, shows drives and folders, accepts an EXE file and offers editions from PS Store or IGDB. Then comes the loading screen, automatic cover, background and description selection, a notification and a spot in the library.
+- **Image caching.** Thumbnails in edition search results are served from the HTTP cache and never saved to disk. Once confirmed, the cover and background are downloaded once into a versioned cache: the original is stored by SHA-256 and derivatives are prepared for the screen — a 512 px cover, a background up to 2560 px and, when needed, 1080p/1440p/4K. Reopening pages or picking again reuses the prepared files with no re-download or re-encode; each game keeps one saved cover, and a manual choice is never overwritten by an automatic one. An interrupted write is restored from the transaction journal, and unused assets after a background change or game removal are cleaned up by a managed garbage collector — with a 10-minute grace and only inside its own cache folder.
 - **Game page.** Cover, art, description, genres, developer, publisher and release date; play time and the last launch. The "Launch" button and the Options menu are right here.
 - **Options menu.** Add to favorites, rename, choose a cover, choose a background, set launch options (EXE, arguments, working directory, folder filter) or remove the game from the library.
 - **Covers and backgrounds.** Two source catalogs — PS Store and IGDB; the chosen option is marked "Installed" and saved.
@@ -208,9 +213,10 @@ November 20, 2026 update:
 - **Themes.** Drop a video into the `themes` folder and it appears in the catalog with a preview. The splash and welcome screen stay with the wave; your theme starts when you enter the library. Videos are always muted.
 - **Sound.** Separate levels for music and interface sounds, plus a Windows output device choice. Some running games may need a restart after switching the device.
 - **Displays.** "Primary only", "Duplicate", "Extend" and "Second only" modes, plus choosing a specific monitor for the launcher. The choice survives a restart.
-- **Startup.** Start with Windows, and an experimental desktop-hide mode that temporarily hides the desktop and taskbar while the launcher runs. Replacing the system shell is not available yet — it is being explored.
+- **Startup.** Start with Windows, and an experimental desktop-hide mode: the launcher temporarily terminates only the explorer.exe shell (open folder windows are closed first), while a separate guard process automatically brings the desktop and taskbar back after the launcher exits, crashes or hangs. A dirty marker covers a double failure, with a manual explorer.exe start from Task Manager. The Windows registry and policies are not modified; replacing the system shell is not available yet — it is being explored.
 - **Power.** Shut down, restart, sleep and exit the launcher to the Windows desktop.
 - **Launch and return.** The launcher starts the game, finds its window and restores focus after you exit; play time is tracked automatically, and the music gets quieter on launch.
+- **Controls.** Gamepads connect and disconnect on the fly; Xbox-compatible pads and virtual DualShock 4 pads from a separate external program for my controller are supported — there is no built-in bridge in the launcher. Hints at the bottom follow the keyboard or gamepad; mouse and touch deliberately do not control the interface.
 - **Transitions.** Pages and system screens open with PS4 crossfades; vertical lists scroll at a cadence, rows fade at both edges, and the focus frame stays on its row.
 - **Background.** An animated PS4-style wave of our own; it pauses while you are in a game.
 
