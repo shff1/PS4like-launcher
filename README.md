@@ -19,9 +19,11 @@
 
 | Библиотека · Library | Движение · Motion |
 |:---:|:---:|
-| ![Волна в библиотеке](screenshots/wave-home-2026-11-22.jpg) | [![Смотреть волну](screenshots/ps4-wave-poster-2026-11-22.jpg)](screenshots/ps4-wave-2026-11-22.mp4) |
+| ![Волна в библиотеке](screenshots/wave-home-2026-11-22.jpg) | ![Кадр из ролика](screenshots/ps4-wave-poster-2026-11-22.jpg) |
 
-*Клик по кадру — короткий ролик волны, 12 секунд без звука. · Click the frame for a 12-second silent wave clip.*
+https://github.com/user-attachments/assets/d339fb91-6597-4a59-a583-4ac92e0d3569
+
+*Ниже — короткий ролик волны, 12 секунд без звука. · Below is a 12-second silent wave clip.*
 
 ## Скриншоты / Screenshots
 
