@@ -9,7 +9,7 @@
 > **Это не эмулятор PS4.** Лаунчер запускает обычные Windows-игры.
 > **Not a PS4 emulator.** It launches regular Windows games.
 
-![Домашний экран PS4 Launcher с волной PS4 7.00](screenshots/wave-home-2026-11-22.jpg)
+![Экран приветствия PS4 Launcher с волной PS4 7.00](screenshots/welcome-wave-2026-11-22.jpg)
 
 ## Волна PS4 7.00 — 1:1 · The wave, recreated 1:1
 
@@ -17,19 +17,19 @@
 
 **English.** The background is built from the original PS4 7.00 assets: a 9,664-vertex, 17,458-triangle mesh, 96 bones, poses and a camera path, plus the Boot/Login and Home/System palettes. Rendering is WebGL2 with a background pass, a depth prepass and two transparency passes; the full loop is 266.67 seconds. The wave wakes up under the black splash screen, lives on the welcome screen and in the library, and pauses in game.
 
-| Приветствие · Welcome | Движение · Motion |
+| Библиотека · Library | Движение · Motion |
 |:---:|:---:|
-| ![Волна на экране приветствия](screenshots/wave-welcome-2026-11-22.jpg) | [![Смотреть волну](screenshots/ps4-wave-poster-2026-11-22.jpg)](screenshots/ps4-wave-2026-11-22.mp4) |
+| ![Волна в библиотеке](screenshots/wave-home-2026-11-22.jpg) | [![Смотреть волну](screenshots/ps4-wave-poster-2026-11-22.jpg)](screenshots/ps4-wave-2026-11-22.mp4) |
 
 *Клик по кадру — короткий ролик волны, 12 секунд без звука. · Click the frame for a 12-second silent wave clip.*
 
 ## Скриншоты / Screenshots
 
-**Заставка и волна · Boot & wave**
+**Заставка и главный экран · Boot & home**
 
-| Заставка · Boot splash | Волна на приветствии · Welcome wave |
+| Заставка · Boot splash | Библиотека · Library |
 |:---:|:---:|
-| ![Заставка](screenshots/09-boot.png) | ![Волна](screenshots/wave-welcome-2026-11-22.jpg) |
+| ![Заставка](screenshots/09-boot.png) | ![Библиотека](screenshots/home-tlou2-2026-11-22.jpg) |
 
 **Страница игры · Game page**
 
@@ -67,7 +67,7 @@
 
 | История · History | Всплывающая плашка · Toast |
 |:---:|:---:|
-| ![Уведомления](screenshots/22-notifications.jpg) | ![Плашка](screenshots/23-notification-toast.jpg) |
+| ![Уведомления](screenshots/22-notifications.jpg) | ![Плашка](screenshots/notification-toast-2026-11-22.jpg) |
 
 | Верхний ряд функций · Function row |
 |:---:|
@@ -103,11 +103,11 @@
 
 | Лента · Feed | Хаб новинки · Release hub |
 |:---:|:---:|
-| ![Что нового](screenshots/04-whats-new-2026.jpg) | ![Хаб новинки](screenshots/05-whats-new-hub.jpg) |
+| ![Что нового](screenshots/whats-new-feed-2026-11-22.jpg) | ![Хаб новинки](screenshots/whats-new-hub-2026-11-22.jpg) |
 
 | Просмотр скриншотов · Screenshot viewer |
 |:---:|
-| ![Просмотр скриншотов](screenshots/06-screenshot-viewer.jpg) |
+| ![Просмотр скриншотов](screenshots/screenshot-viewer-2026-11-22.jpg) |
 
 ---
 
@@ -154,7 +154,7 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 - **Страница игры.** Обложка, арт, описание, жанры, разработчик, издатель и дата выхода; время в игре и последний запуск. Кнопка «Запуск» и меню Options — рядом.
 - **Меню Options.** Добавить в избранное, переименовать, выбрать обложку, выбрать фон, настроить параметры запуска (EXE, аргументы, рабочая папка, фильтр папок) или удалить игру из библиотеки.
 - **Обложки и фоны.** Два каталога источников — PS Store и IGDB; выбранный вариант помечается «Установлен» и сохраняется.
-- **«Что нового».** Обновления ваших игр, хиты месяца и то, что скоро выйдет. У каждой новинки — описание, детали и скриншоты, которые открываются на весь экран.
+- **«Что нового».** Новинки PS Store, хиты месяца и карточки игр: описание, детали, скриншоты на весь экран и похожие игры.
 - **Уведомления.** Плашки о добавлении игры, подключении и отключении контроллера и системных событиях; отдельный экран истории и голубой счётчик непрочитанных.
 - **Профиль.** Экран с именем и аватаром. Хранятся пять последних аватаров: шестой вытесняет самый старый, а изображение остаётся в профиле даже после удаления исходного файла.
 - **Темы.** Положите видео в папку `themes` — оно появится в каталоге с превью. Заставка и приветствие остаются с волной: тема включается при входе в библиотеку. Видео всегда без звука.
@@ -231,7 +231,7 @@ The interface and descriptions are in Russian.
 - **Game page.** Cover, art, description, genres, developer, publisher and release date; play time and the last launch. The "Launch" button and the Options menu are right here.
 - **Options menu.** Add to favorites, rename, choose a cover, choose a background, set launch options (EXE, arguments, working directory, folder filter) or remove the game from the library.
 - **Covers and backgrounds.** Two source catalogs — PS Store and IGDB; the chosen option is marked "Installed" and saved.
-- **What's New.** Updates for your games, recent hits and upcoming releases. Each release has its own page with details and screenshots that open full screen.
+- **What's New.** PS Store new releases, monthly hits and game pages with details, screenshots that open full screen, and similar games.
 - **Notifications.** Toasts for game additions, controller connections and disconnections and system events; a separate history screen and a blue unread counter.
 - **Profile.** A screen with a name and an avatar. The five most recent avatars are kept: the sixth replaces the oldest, and the image stays in the profile even if the source file is deleted.
 - **Themes.** Drop a video into the `themes` folder and it appears in the catalog with a preview. The splash and welcome screen stay with the wave; your theme starts when you enter the library. Videos are always muted.
