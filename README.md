@@ -9,15 +9,27 @@
 > **Это не эмулятор PS4.** Лаунчер запускает обычные Windows-игры.
 > **Not a PS4 emulator.** It launches regular Windows games.
 
-![Экран приветствия PS4 Launcher](screenshots/00-welcome-2026.jpg)
+![Домашний экран PS4 Launcher с волной PS4 7.00](screenshots/wave-home-2026-11-22.jpg)
+
+## Волна PS4 7.00 — 1:1 · The wave, recreated 1:1
+
+**Русский.** Фон лаунчера собран из оригинальных ресурсов PS4 7.00: сетка на 9 664 вершины и 17 458 треугольников, 96 костей, позы и траектория камеры, палитры Boot/Login и Home/System. Рендер — WebGL2: фон, depth-prepass и два прохода прозрачности; полный цикл — 266,67 секунды. Волна просыпается под чёрной заставкой, живёт на приветствии и в библиотеке и замирает в игре.
+
+**English.** The background is built from the original PS4 7.00 assets: a 9,664-vertex, 17,458-triangle mesh, 96 bones, poses and a camera path, plus the Boot/Login and Home/System palettes. Rendering is WebGL2 with a background pass, a depth prepass and two transparency passes; the full loop is 266.67 seconds. The wave wakes up under the black splash screen, lives on the welcome screen and in the library, and pauses in game.
+
+| Приветствие · Welcome | Движение · Motion |
+|:---:|:---:|
+| ![Волна на экране приветствия](screenshots/wave-welcome-2026-11-22.jpg) | [![Смотреть волну](screenshots/ps4-wave-poster-2026-11-22.jpg)](screenshots/ps4-wave-2026-11-22.mp4) |
+
+*Клик по кадру — короткий ролик волны, 12 секунд без звука. · Click the frame for a 12-second silent wave clip.*
 
 ## Скриншоты / Screenshots
 
-**Главный экран · Home**
+**Заставка и волна · Boot & wave**
 
-| Библиотека и «Что нового» · Library | Заставка · Boot splash |
+| Заставка · Boot splash | Волна на приветствии · Welcome wave |
 |:---:|:---:|
-| ![Главный экран](screenshots/10-home-2026.jpg) | ![Заставка](screenshots/09-boot.png) |
+| ![Заставка](screenshots/09-boot.png) | ![Волна](screenshots/wave-welcome-2026-11-22.jpg) |
 
 **Страница игры · Game page**
 
@@ -111,7 +123,13 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 
 ### Что нового
 
-Обновление от 20 ноября 2026:
+**22 ноября 2026 — волна 1:1**
+
+- **Волна из оригинальных данных PS4 7.00.** Геометрия, 96 костей, позы, камера и палитры Boot/Login и Home/System — 1:1. Рендер — WebGL2 с depth-prepass и двумя проходами прозрачности.
+- **Плавный запуск и пауза.** Первый кадр готовится под чёрной заставкой, движение включается с раскрытием; на приветствии и в библиотеке волна живёт, в игре замирает.
+- **Свежая «Что нового».** Лента переведена на PSN: новинки, хиты и карточки игр.
+
+**20 ноября 2026**
 
 - **Добавление игры внутри лаунчера.** Файловый браузер по дискам, поиск издания в PS Store (с резервным IGDB для PC-игр), выбор источника метаданных и системный экран ожидания в стиле PS4. Название, обложка, фон и описание подтягиваются автоматически.
 - **Кеш при добавлении игры.** Миниатюры изданий в результатах поиска — только HTTP-кеш, на диск не сохраняются. Выбранные обложка и фон скачиваются один раз в версионированный кеш, из которого готовятся производные под экран; повторные открытия и выборы переиспользуют готовые файлы, а невостребованное убирает управляемый сборщик мусора.
@@ -147,11 +165,11 @@ PS4 Launcher — личный проект: домашний экран PlayStat
 - **Запуск и возврат.** Лаунчер запускает игру, находит её окно и возвращает фокус после выхода; время игры считается само, а музыка на старте становится тише.
 - **Управление.** Геймпады подключаются и отключаются на лету; поддерживаются Xbox-совместимые геймпады и виртуальные DualShock 4 от отдельной внешней программы для моего контроллера — встроенного моста в лаунчере нет. Подсказки внизу подстраиваются под клавиатуру или геймпад; мышь и касания намеренно не управляют интерфейсом.
 - **Переходы.** Открытие страниц и системных экранов — PS4-кроссфейды; вертикальные списки листаются в каденте, строки гаснут у обеих кромок, а рамка фокуса остаётся на строке.
-- **Фон.** Собственная анимированная волна в стиле PS4; в игре она замирает.
+- **Волна.** Фон из оригинальных ресурсов PS4 7.00: 9 664 вершины, 96 костей, палитры Boot/Login и Home/System. Волна живёт на приветствии и в библиотеке и замирает в игре.
 
 ### Технологии
 
-Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Метаданные и изображения — PS Store, IGDB, Steam и SteamGridDB. Windows 10/11.
+Python и pywebview (WebView2), интерфейс — HTML/CSS/JS. Волна — WebGL2 на оригинальных данных PS4 7.00 (openPS4-shell, MIT). Метаданные и изображения — PS Store, IGDB, Steam и SteamGridDB. Windows 10/11.
 
 ### Статус
 
@@ -182,7 +200,13 @@ The interface and descriptions are in Russian.
 
 ### What's new
 
-November 20, 2026 update:
+**November 22, 2026 — the 1:1 wave**
+
+- **The wave from the original PS4 7.00 assets.** Geometry, 96 bones, poses, camera and the Boot/Login and Home/System palettes — 1:1. Rendering is WebGL2 with a depth prepass and two transparency passes.
+- **A smooth start and a pause.** The first frame is prepared under the black splash screen and motion begins with the reveal; the wave lives on the welcome screen and in the library and pauses in game.
+- **A fresh What's New.** The feed now runs on PSN: new releases, hits and game pages.
+
+**November 20, 2026**
 
 - **Adding games inside the launcher.** A file browser across drives, edition search in the PS Store (with IGDB fallback for PC games), a metadata source choice and a PS4-style system loading screen. Title, cover, background and description are picked up automatically.
 - **Image caching.** Edition thumbnails in search results come from the HTTP cache and are never written to disk. Once you confirm, the cover and background are downloaded once into a versioned cache: the original is stored by SHA-256 and derivatives are prepared for the screen; reopening pages and picking again reuse the prepared files, and unused assets are cleaned up by a managed garbage collector.
@@ -218,11 +242,11 @@ November 20, 2026 update:
 - **Launch and return.** The launcher starts the game, finds its window and restores focus after you exit; play time is tracked automatically, and the music gets quieter on launch.
 - **Controls.** Gamepads connect and disconnect on the fly; Xbox-compatible pads and virtual DualShock 4 pads from a separate external program for my controller are supported — there is no built-in bridge in the launcher. Hints at the bottom follow the keyboard or gamepad; mouse and touch deliberately do not control the interface.
 - **Transitions.** Pages and system screens open with PS4 crossfades; vertical lists scroll at a cadence, rows fade at both edges, and the focus frame stays on its row.
-- **Background.** An animated PS4-style wave of our own; it pauses while you are in a game.
+- **The wave.** A background built from the original PS4 7.00 assets: a 9,664-vertex mesh, 96 bones and the Boot/Login and Home/System palettes. It lives on the welcome screen and in the library, and pauses in game.
 
 ### Tech
 
-Python and pywebview (WebView2); the interface is HTML/CSS/JS. Metadata and images come from PS Store, IGDB, Steam and SteamGridDB. Windows 10/11.
+Python and pywebview (WebView2); the interface is HTML/CSS/JS. The wave is WebGL2 running on the original PS4 7.00 assets (openPS4-shell, MIT). Metadata and images come from PS Store, IGDB, Steam and SteamGridDB. Windows 10/11.
 
 ### Status
 
